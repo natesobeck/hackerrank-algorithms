@@ -43,14 +43,14 @@
 // 1 ≤ b[i] ≤ 100
 
 
-function compareTriplets(aliceArray, bobArray) {
+function compareTriplets(a, b) {
   let aliceScore = 0
   let bobScore = 0
 
-  aliceArray.forEach((rating, i) => {
-    if (rating > bobArray[i]) {
+  a.forEach((rating, i) => {
+    if (rating > b[i]) {
       aliceScore += 1
-    } else if (rating < bobArray[i]) {
+    } else if (rating < b[i]) {
       bobScore += 1
     }
   })
