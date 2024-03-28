@@ -12,7 +12,6 @@ function sockMerchant(n, sockArr) {
     }
   })
 
-
   for (let sock in sockCounter) {
     let pairs = Math.floor(sockCounter[sock] / 2)
     result = result + pairs
