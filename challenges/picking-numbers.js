@@ -20,32 +20,32 @@
 
 */
 
-// function pickingNumbers(array) {
-//   let result = 0
-//   for (let i = 0; i < array.length; i++) {
-//     const tempArr1 = [array[i]]
-//     const tempArr2 = [array[i]]
-//     for (let j = 0; j < array.length; j++) {
-//       if (j !== i) {
-//         if (array[i] === array[j] - 1 || array[i] === array[j]) {
-//           tempArr1.push(array[j])
-//         } else if (array[i] === array[j] + 1 || array[i] === array[j]) {
-//           tempArr2.push(array[j])
-//         }
-//       }
-//     }
-//     console.log(tempArr1, tempArr2)
-//     if (tempArr1.length > result) {
-//       result = tempArr1.length
-//     }
-//     if (tempArr2.length > result) {
-//       result = tempArr2.length
-//     }
-//   }
-//   return result
-// }
-
 function pickingNumbers(array) {
+  let result = 0
+  for (let i = 0; i < array.length; i++) {
+    const tempArr1 = [array[i]]
+    const tempArr2 = [array[i]]
+    for (let j = 0; j < array.length; j++) {
+      if (j !== i) {
+        if (array[i] === array[j] - 1 || array[i] === array[j]) {
+          tempArr1.push(array[j])
+        } else if (array[i] === array[j] + 1 || array[i] === array[j]) {
+          tempArr2.push(array[j])
+        }
+      }
+    }
+    console.log(tempArr1, tempArr2)
+    if (tempArr1.length > result) {
+      result = tempArr1.length
+    }
+    if (tempArr2.length > result) {
+      result = tempArr2.length
+    }
+  }
+  return result
+}
+
+function pickingNumbers2(array) {
   let result = 0
   let objArray = {}
 
