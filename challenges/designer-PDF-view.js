@@ -34,3 +34,4 @@ function designerPdfViewer(h, word) {
 
   return totalHeight * word.length
 }
+
