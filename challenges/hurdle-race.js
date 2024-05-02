@@ -27,3 +27,4 @@ function hurdleRace(k, height) {
     return highestHurdle - k
   }
 }
+
