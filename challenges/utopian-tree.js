@@ -7,7 +7,7 @@
 2. use a while loop (count < n)
 
 3. For each loop iteration: 
-  - if cycles % 2 === 0, multiply height by 2
+  - if cycles % 2 === 0 or cycles === 0, multiply height by 2
   - otherwise, add 1 to height
   - add 1 to cycles
 
@@ -21,7 +21,7 @@ function utopianTree(n) {
 
   while (cycles < n) {
     if (cycles % 2 === 0 || cycles === 0) {
-      height = height * 2   
+      height *= 2 
     } else {       
       height++
     }
