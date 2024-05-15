@@ -33,17 +33,5 @@ function saveThePrisoner(n, m, s) {
     result -= n
   }
 
-
   return result
 }
-
-saveThePrisoner(352926151, 380324688, 94730870)
-
-let m = 380324688
-let n = 352926151
-let s = 94730870
-
-let count = m % n - 1
-let result = count + s
-console.log(result)
-122129406
