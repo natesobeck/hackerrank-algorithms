@@ -25,9 +25,7 @@ function permutationEquation(array) {
   for(let x = 1; x <= array.length; x++) {
     const y = objArray[objArray[x]]
     result.push(y)
-  }
+  } 
 
   return result
 }
-
-console.log(permutationEquation([3, 1, 2]))
