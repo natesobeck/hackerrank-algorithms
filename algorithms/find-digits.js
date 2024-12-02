@@ -14,5 +14,3 @@ function findDigits(n) {
 
   return result
 }
-
-console.log(findDigits(124))
